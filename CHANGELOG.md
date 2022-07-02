@@ -1,3 +1,10 @@
+# 1.0.0 (2022-07-02)
+
+
+### Features
+
+* initial commit ([5076c18](https://github.com/superman66/logseq-plugin-urls-md/commit/5076c180fcff53bd4bac84c0e66ad037814d743c))
+
 ## [2.1.1](https://github.com/pengx17/logseq-plugin-template-react/compare/v2.1.0...v2.1.1) (2022-03-24)
 
 
