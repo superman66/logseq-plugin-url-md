@@ -2,9 +2,9 @@
 
 > A Plugin Convert URLs to Markdown links in Logseq.
 
-This plugin will request from the URL and get the title and convert to Markdown link format.
+This plugin will request from the URL and get the title(base on [preview-link-js](https://github.com/ospfranco/link-preview-js)) and convert to Markdown link format.
 
-It depend on the online service [get-urls-md](https://get-urls-md.vercel.app/api/title?site=https://github.com). So it will not work if the service is down or your devices is not connected to the internet.
+It will not work if your devices is not connected to the internet.
 
 ## Demo
 
@@ -16,7 +16,7 @@ It depend on the online service [get-urls-md](https://get-urls-md.vercel.app/api
 
 ## How to use
 
-You can find it in the logseq plugin market.
+You can search `logseq-plugin-urls-md` in the logseq plugin marketplace.
 
 ## Development
 
