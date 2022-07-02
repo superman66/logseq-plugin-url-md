@@ -1,60 +1,31 @@
 import "@logseq/libs";
-
-import React from "react";
-import * as ReactDOM from "react-dom/client";
-import App from "./App";
-import "./index.css";
-
 import { logseq as PL } from "../package.json";
-
-// @ts-expect-error
-const css = (t, ...args) => String.raw(t, ...args);
+import { getUrlMD } from "./utils";
 
 const pluginId = PL.id;
 
 function main() {
   console.info(`#${pluginId}: MAIN`);
-  const root = ReactDOM.createRoot(document.getElementById("app")!);
-
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+  const mainContentContainer = parent.document.getElementById(
+    "main-content-container"
   );
+  console.log(mainContentContainer);
 
-  function createModel() {
-    return {
-      show() {
-        logseq.showMainUI();
-      },
-    };
-  }
-
-  logseq.provideModel(createModel());
-  logseq.setMainUIInlineStyle({
-    zIndex: 11,
-  });
-
-  const openIconName = "template-plugin-open";
-
-  logseq.provideStyle(css`
-    .${openIconName} {
-      opacity: 0.55;
-      font-size: 20px;
-      margin-top: 4px;
+  const handlePaste = async (event: ClipboardEvent) => {
+    if (event.clipboardData) {
+      event.preventDefault();
+      event.stopPropagation();
+      const text = event.clipboardData.getData("text/plain");
+      console.log("当前粘贴内容：", text);
+      const convert = await getUrlMD(text);
+      console.log("转换后格式", convert);
+      await logseq.Editor.insertAtEditingCursor(convert);
+      return;
     }
+  };
 
-    .${openIconName}:hover {
-      opacity: 0.9;
-    }
-  `);
-
-  logseq.App.registerUIItem("toolbar", {
-    key: openIconName,
-    template: `
-      <div data-on-click="show" class="${openIconName}">⚙️</div>
-    `,
-  });
+  mainContentContainer &&
+    mainContentContainer.addEventListener("paste", handlePaste);
 }
 
 logseq.ready(main).catch(console.error);

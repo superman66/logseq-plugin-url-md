@@ -1,5 +1,5 @@
 {
-  "name": "logseq-plugin-template-react",
+  "name": "logseq-plugin-urls-md",
   "version": "0.0.0",
   "main": "dist/index.html",
   "scripts": {
@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@logseq/libs": "^0.0.6",
+    "axios": "^0.27.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
@@ -38,7 +39,7 @@
     "vite-plugin-logseq": "1.1.2"
   },
   "logseq": {
-    "id": "_pengx17-logseq-template-react",
+    "id": "logseq-urls-md",
     "icon": "./logo.svg"
   }
 }
