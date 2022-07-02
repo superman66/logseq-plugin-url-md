@@ -1,3 +1,6 @@
+<div align="center">
+<img src="./logo.jpeg" />
+</div>
 # Logseq Plugin URLs MD
 
 > A Plugin Convert URLs to Markdown links in Logseq.
