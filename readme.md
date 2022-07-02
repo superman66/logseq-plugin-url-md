@@ -3,11 +3,10 @@
 </div>
 # Logseq Plugin URLs MD
 
-> A Plugin Convert URLs to Markdown links in Logseq.
+> A Plugin that help you to Convert URLs to Markdown links when you paste a url in logseq.
 
 This plugin will request from the URL and get the title(base on [preview-link-js](https://github.com/ospfranco/link-preview-js)) and convert to Markdown link format.
-
-It will not work if your devices is not connected to the internet.
+If your paste text is not a URL, it will not convert.
 
 ## Demo
 
