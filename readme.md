@@ -1,8 +1,29 @@
-# Logseq Plugin Template React
+# Logseq Plugin URLs MD
+
+> A Plugin Convert URLs to Markdown links in Logseq.
+
+This plugin will request from the URL and get the title and convert to Markdown link format.
+
+It depend on the online service [get-urls-md](https://get-urls-md.vercel.app/api/title?site=https://github.com). So it will not work if the service is down or your devices is not connected to the internet.
+
+## Demo
+
+![demo](./logseq-plugin-urls-md.gif)
 
 ## Features
 
-- plug & play boilerplate with properly defined GitHub action defaults
-- develop with HMR, empowered by lightning fast Vite ⚡ with [vite-logseq-plugin](https://github.com/pengx17/vite-plugin-logseq)
-- windicss for styling
-- pnpm
+- Convert URLs to Markdown links in Logseq when you paste the link.
+
+## How to use
+
+You can find it in the logseq plugin market.
+
+## Development
+
+```
+// install deps
+pnpm install
+
+// build
+pnpm run build
+```
