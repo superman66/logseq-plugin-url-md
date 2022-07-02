@@ -1,5 +1,6 @@
 import { LSPluginUserEvents } from "@logseq/libs/dist/LSPlugin.user";
 import axios from "axios";
+import { getLinkPreview } from "link-preview-js";
 import React from "react";
 
 let _visible = logseq.isMainUIVisible;
@@ -24,17 +25,16 @@ export const useAppVisible = () => {
   return React.useSyncExternalStore(subscribeToUIVisible, () => _visible);
 };
 
-export const getUrlMD = async (text: string) => {
+export const getUrlMD = async (title: string, link: string) => {
+  return `[${title}](${link})`;
+};
+
+export const getLinkMDTitle = async (url: string) => {
   try {
-    const response = await axios.get(
-      `https://get-urls-md.vercel.app/api/title?site=${text}`
-    );
-    if (response.status === 200) {
-      return response.data.link[0];
-    }
-    return text;
+    const data = await getLinkPreview(url);
+    // @ts-ignore
+    return getUrlMD(data.title || url, url);
   } catch (error) {
-    // 当出错或者 text 不是 url 时，则返回
-    return text;
+    return url;
   }
 };
