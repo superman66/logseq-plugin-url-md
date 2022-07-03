@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/superman66/logseq-plugin-url-md/compare/v1.1.0...v1.2.0) (2022-07-03)
+
+
+### Features
+
+* rename to `logseq-plugin-url-md` ([e4bf809](https://github.com/superman66/logseq-plugin-url-md/commit/e4bf809a84cd0f7246618f1af3f24376e3c8b866))
+
 # [1.1.0](https://github.com/superman66/logseq-plugin-urls-md/compare/v1.0.0...v1.1.0) (2022-07-03)
 
 
