@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/superman66/logseq-plugin-urls-md/compare/v1.0.0...v1.1.0) (2022-07-03)
+
+
+### Bug Fixes
+
+* paste file does't working ([d06ab5e](https://github.com/superman66/logseq-plugin-urls-md/commit/d06ab5e24f12733cafa9e077e3dce4e2726f78ad)), closes [#1](https://github.com/superman66/logseq-plugin-urls-md/issues/1)
+
+
+### Features
+
+* update plugin logo ([e2327e6](https://github.com/superman66/logseq-plugin-urls-md/commit/e2327e6eb0ea354cde4fdfd003510853e386f464))
+* use link-preview-js to get title ([82f1695](https://github.com/superman66/logseq-plugin-urls-md/commit/82f1695116ef38b442029fd2e44e6cc2b2d04466))
+
 # [1.1.0](https://github.com/superman66/logseq-plugin-urls-md/compare/v1.0.0...v1.1.0) (2022-07-02)
 
 
