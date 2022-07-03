@@ -1,7 +1,9 @@
 <div align="center">
 <img src="./logo.jpeg" />
 </div>
-# Logseq Plugin URLs MD
+
+[![Releases](https://github.com/superman66/logseq-plugin-urls-md/actions/workflows/main.yml/badge.svg)](https://github.com/superman66/logseq-plugin-urls-md/actions/workflows/main.yml)
+# logseq-plugin-urls-md
 
 > A Plugin that help you to Convert URLs to Markdown links when you paste a url in logseq.
 
