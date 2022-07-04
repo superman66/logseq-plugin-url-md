@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/superman66/logseq-plugin-url-md/compare/v1.2.1...v1.2.2) (2022-07-04)
+
+
+### Bug Fixes
+
+* **assets:** release missing assets ([5ceb2f0](https://github.com/superman66/logseq-plugin-url-md/commit/5ceb2f024c09da84b1ff9ae4f42dbc9339b2892e))
+
 ## [1.2.1](https://github.com/superman66/logseq-plugin-url-md/compare/v1.2.0...v1.2.1) (2022-07-04)
 
 
