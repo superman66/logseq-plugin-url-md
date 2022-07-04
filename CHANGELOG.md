@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/superman66/logseq-plugin-url-md/compare/v1.2.0...v1.2.1) (2022-07-04)
+
+
+### Bug Fixes
+
+* **logo:** zip files missing logo ([5cdc7a0](https://github.com/superman66/logseq-plugin-url-md/commit/5cdc7a0253326f3ac776f81ce356dadd3e247084))
+
 # [1.2.0](https://github.com/superman66/logseq-plugin-url-md/compare/v1.1.0...v1.2.0) (2022-07-03)
 
 
