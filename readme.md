@@ -4,6 +4,8 @@
 
 [![Releases](https://github.com/superman66/logseq-plugin-url-md/actions/workflows/main.yml/badge.svg)](https://github.com/superman66/logseq-plugin-url-md/actions/workflows/main.yml)
 
+> this plugin is not recommended. See this discussion: logseq/marketplace#213
+
 # logseq-plugin-url-md
 
 > A Plugin that help you to Convert URL to Markdown links when you paste a url in logseq.
